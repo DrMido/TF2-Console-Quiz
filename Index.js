@@ -48,7 +48,7 @@ async function question2() {
     message: 'When was the Initial release date for tf2?',
     choices: ['2006', '2007', '2008', '2009'],
   });
-  return handleAnswer(answers.question1 === '2007');
+  return handleAnswer(answers.question2 === '2007');
 }
 
 async function question3() {
@@ -58,7 +58,7 @@ async function question3() {
     message: 'How many food weapons is there in tf2',
     choices: ['4', '5', '6', '7'],
   });
-  return handleAnswer(answers.question1 === '7');
+  return handleAnswer(answers.question3 === '7');
 }
 
 async function question4() {
@@ -68,7 +68,7 @@ async function question4() {
     message: 'How much damage does a bodyshot deal from a sniperrifle?',
     choices: ['20', '30', '40', '50'],
   });
-  return handleAnswer(answers.question1 === '50');
+  return handleAnswer(answers.question4 === '50');
 }
 
 async function question5() {
@@ -78,7 +78,7 @@ async function question5() {
     message: 'What was the first all class-hat?',
     choices: ["Bill's hat", "Ellis's hat", 'Team captain', "Cheater's lament"],
   });
-  return handleAnswer(answers.question1 === '4');
+  return handleAnswer(answers.question5 === "Cheater's lament");
 }
 
 async function handleAnswer(isCorrect) {
